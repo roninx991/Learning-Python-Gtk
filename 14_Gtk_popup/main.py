@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+import gi
+gi.require_version("Gtk", "3.0")
 from gi.repository import Gtk, Gio
 
 
@@ -17,9 +20,9 @@ class MainWindow(Gtk.Window):
         response = dialog.run()
 
         if response == Gtk.ResponseType.OK:
-            print "You clicked the OK button"
+            print ("You clicked the OK button")
         elif response == Gtk.ResponseType.CANCEL:
-            print "You clicked the CANCEL button"
+            print ("You clicked the CANCEL button")
 
         dialog.destroy()
 

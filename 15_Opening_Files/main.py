@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+import gi
+gi.require_version("Gtk", "3.0")
 from gi.repository import Gtk, Gio
 
 
@@ -22,11 +25,11 @@ class MainWindow(Gtk.Window):
         response = dialog.run()
 
         if response == Gtk.ResponseType.OK:
-            print "You clicked the OK button"
-            print "File selected " + dialog.get_filename()
+            print ("You clicked the OK button")
+            print ("File selected " + dialog.get_filename())
 
         elif response == Gtk.ResponseType.CANCEL:
-            print "User didn't choose any file"
+            print ("User didn't choose any file")
 
         dialog.destroy()
 

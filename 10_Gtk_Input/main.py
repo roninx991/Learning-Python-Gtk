@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+import gi
+gi.require_version("Gtk", "3.0")
 from gi.repository import Gtk, Gio
 
 
@@ -29,8 +32,8 @@ class MainWindow(Gtk.Window):
         vbox.pack_start(self.button, True, True, 0)
 
     def sign_in(self, widget):
-        print self.username.get_text()
-        print self.password.get_text()
+        print (self.username.get_text())
+        print (self.password.get_text())
 
 window = MainWindow()
 

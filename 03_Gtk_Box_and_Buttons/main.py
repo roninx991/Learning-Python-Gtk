@@ -1,3 +1,8 @@
+#!/usr/bin/env python3
+
+import gi
+
+gi.require_version("Gtk", "3.0")
 from gi.repository import Gtk, Gio
 
 
@@ -20,10 +25,10 @@ class MainWindow(Gtk.Window):
         self.box.pack_start(self.spinach_button, True, True, 0)
 
     def bacon_clicked(self, widget):
-        print "Bacon is not healthy"
+        print ("Bacon is not healthy")
 
     def spinach_clicked(self, widget):
-        print "Spinach is healthy"
+        print ("Spinach is healthy")
 
 
 window = MainWindow()

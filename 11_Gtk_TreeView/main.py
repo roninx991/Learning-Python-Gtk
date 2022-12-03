@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+import gi
+gi.require_version("Gtk", "3.0")
 from gi.repository import Gtk
 
 # List of tuples (this is the model, aka the data that will be displayed by the TreeView)
@@ -38,26 +41,11 @@ class MainWindow(Gtk.Window):
             # Create columns (text is column number)
             column = Gtk.TreeViewColumn(col_title, renderer, text=i)
 
-            # Make columns sortable
-            column.set_sort_column_id(i)
-
             # Add column to TreeView
             people_tree_view.append_column(column)
 
-        # Handle Selection
-        selected_row = people_tree_view.get_selection()
-        selected_row.connect("changed", self.item_selected)
-
         # Add TreeView to main layout
         layout.pack_start(people_tree_view, True, True, 0)
-
-    # User selected row
-    def item_selected(self, selection):
-        model, row = selection.get_selected()
-        if row is not None:
-            print "Name: " + model[row][0]
-            print "Age: " + str(model[row][1])
-            print "Job: " + model[row][2]
 
 
 window = MainWindow()
