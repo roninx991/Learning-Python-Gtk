@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<!DOCTYPE cambalache-project SYSTEM "cambalache-project.dtd">
+<cambalache-project version="0.10.3" target_tk="gtk+-3.0">
+  <ui>
+	(1,None,"21_pygtk_cambalache.ui","21_pygtk_cambalache.ui",None,None,None,None,None,None)
+  </ui>
+  <object>
+	(1,1,"GtkWindow","window1",None,None,None,None,None),
+	(1,2,"GtkGrid",None,1,None,None,None,-1),
+	(1,3,"GtkLabel",None,2,None,None,None,None),
+	(1,4,"GtkEntry","mile_ent",2,None,None,None,None),
+	(1,5,"GtkButton","Close",2,None,None,None,None),
+	(1,6,"GtkLabel",None,2,None,None,None,None),
+	(1,7,"GtkEntry","calc_ent",2,None,None,None,1),
+	(1,8,"GtkButton","calc_btn",2,None,None,None,2),
+	(1,9,"GtkButton","about_btn",2,None,None,None,None)
+  </object>
+  <object_property>
+	(1,2,"GtkWidget","margin-bottom","7",None,None,None,None,None),
+	(1,3,"GtkLabel","label","Mile",None,None,None,None,None),
+	(1,3,"GtkLabel","max-width-chars","2",None,None,None,None,None),
+	(1,3,"GtkLabel","wrap-mode","char",None,None,None,None,None),
+	(1,3,"GtkMisc","yalign","0.0",None,None,None,None,None),
+	(1,3,"GtkMisc","ypad","6",None,None,None,None,None),
+	(1,3,"GtkWidget","halign","baseline",None,None,None,None,None),
+	(1,5,"GtkButton","label","Close",None,None,None,None,None),
+	(1,5,"GtkButton","relief","half",None,None,None,None,None),
+	(1,6,"GtkLabel","label","Km: ",None,None,None,None,None),
+	(1,7,"GtkEntry","im-module","km_ent",None,None,None,None,None),
+	(1,8,"GtkButton","label","Calculeaza",None,None,None,None,None),
+	(1,9,"GtkButton","label","About",None,None,None,None,None)
+  </object_property>
+  <object_layout_property>
+	(1,2,3,"GtkGridLayoutChild","height","1",None,None,None,None),
+	(1,2,3,"GtkGridLayoutChild","left-attach","0",None,None,None,None),
+	(1,2,3,"GtkGridLayoutChild","top-attach","0",None,None,None,None),
+	(1,2,3,"GtkGridLayoutChild","width","1",None,None,None,None),
+	(1,2,4,"GtkGridLayoutChild","height","1",None,None,None,None),
+	(1,2,4,"GtkGridLayoutChild","left-attach","1",None,None,None,None),
+	(1,2,4,"GtkGridLayoutChild","top-attach","0",None,None,None,None),
+	(1,2,4,"GtkGridLayoutChild","width","1",None,None,None,None),
+	(1,2,5,"GtkGridLayoutChild","height","1",None,None,None,None),
+	(1,2,5,"GtkGridLayoutChild","left-attach","2",None,None,None,None),
+	(1,2,5,"GtkGridLayoutChild","top-attach","0",None,None,None,None),
+	(1,2,5,"GtkGridLayoutChild","width","1",None,None,None,None),
+	(1,2,6,"GtkGridLayoutChild","height","1",None,None,None,None),
+	(1,2,6,"GtkGridLayoutChild","left-attach","0",None,None,None,None),
+	(1,2,6,"GtkGridLayoutChild","top-attach","1",None,None,None,None),
+	(1,2,6,"GtkGridLayoutChild","width","1",None,None,None,None),
+	(1,2,7,"GtkGridLayoutChild","height","1",None,None,None,None),
+	(1,2,7,"GtkGridLayoutChild","left-attach","1",None,None,None,None),
+	(1,2,7,"GtkGridLayoutChild","top-attach","1",None,None,None,None),
+	(1,2,7,"GtkGridLayoutChild","width","1",None,None,None,None),
+	(1,2,8,"GtkGridLayoutChild","height","1",None,None,None,None),
+	(1,2,8,"GtkGridLayoutChild","left-attach","2",None,None,None,None),
+	(1,2,8,"GtkGridLayoutChild","top-attach","1",None,None,None,None),
+	(1,2,8,"GtkGridLayoutChild","width","1",None,None,None,None),
+	(1,2,9,"GtkGridLayoutChild","height","1",None,None,None,None),
+	(1,2,9,"GtkGridLayoutChild","left-attach","0",None,None,None,None),
+	(1,2,9,"GtkGridLayoutChild","top-attach","2",None,None,None,None),
+	(1,2,9,"GtkGridLayoutChild","width","1",None,None,None,None)
+  </object_layout_property>
+  <object_signal>
+	(1,1,5,"GtkButton","clicked","on_close_btn_clicked",None,None,None,None,None),
+	(2,1,8,"GtkButton","clicked","on_calc_btn_clicked",None,None,None,None,None)
+  </object_signal>
+</cambalache-project>

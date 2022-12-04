@@ -46,5 +46,18 @@ Learning to build GUI apps for desktops using python.
 ## 15_Opening_Files
 ![img](15_Opening_Files/img_01.png)
 
+## 16_pygtk_app_example
+![img](16_pygtk_app_example/img_01.png)
+
+## 17_pygtk_builder_example
+![img](17_pygtk_builder_example/img_01.png)
+
+## 18_pygtk_convert_celsius_to_fahrenheit
+![img](18_pygtk_convert_celsius_to_fahrenheit/img_01.png)
+
+## Resurse
+[https://athenajc.gitbooks.io/python-gtk-3-api/content/gtk-group/gtkapplication.html#setmenubar](https://athenajc.gitbooks.io/python-gtk-3-api/content/gtk-group/gtkapplication.html#setmenubar)
+
+https://gitlab.gnome.org/GNOME
 
 
