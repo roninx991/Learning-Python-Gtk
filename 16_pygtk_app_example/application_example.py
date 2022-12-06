@@ -151,7 +151,8 @@ class Application(Gtk.Application):
         about_dialog.present()
 
     def on_quit(self, action, param):
-        self.quit()
+        #self.quit()
+        sys.exit()
 
 
 if __name__ == "__main__":
